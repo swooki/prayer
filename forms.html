@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1><a href="index.html">콜럼버스 한인 장로교회</a></h1>
+    <h2>신도 등록</h2>
+    <form action="http://http://216.186.183.129:8887/">
+        <!-- checkbox
+        <div>
+            <input type="checkbox" id="active" checked>
+            <label for="active">Active Member</label>
+        </div>
+        -->
+
+        <p>
+            <label for="appoint">직급</label>
+            <select name="appoint" id="appoint">
+                <option value="">직급을 선택해 주세요</option>
+                <option value="pastor">목사</option>
+                <option value="elder">장로</option>
+                <option value="decon">집사</option>
+                <option value="member" selected>신도</option>
+            </select>
+        </p>
+
+        <!-- <div>
+            <input type="radio" name="appont" id="pastor" value="pastor">
+            <label for="pastor">목사</label>
+            <input type="radio" name="appont" id="elder" value="elder">
+            <label for="elder">장로</label>
+            <input type="radio" name="appont" id="decon" value="decon">
+            <label for="decon">집사</label>
+            <input type="radio" name="appont" id="member" value="member" checked>
+            <label for="member">신도</label>
+        </div> -->
+
+        <!-- url type
+        <div>
+            <label for="url">PAGE_URL: </label>
+            <input name="url" id="url" type="url" placeholder="http://www.abc.com">
+        </div>
+        -->
+
+        <p>
+            <label for="firstname">First Name: </label>
+            <input required name="firstname" id="firstname" type="text" placeholder="First Name">
+        </p>
+        <p>
+            <label for="lastname">Last Name: </label>
+            <input required name="lastname" id="lastname" type="text" placeholder="Last Name">
+        </p>
+        <p>
+            <label for="DOB">Date of Birth: </label>
+            <input name="DOB" id="DOB" type="date" placeholder="Date of Birth">
+        </p>
+        <p>
+            <label for="registerdate">Register Date: </label>
+            <input name="registerdate" id="DOB" type="date" placeholder="Register Date">
+        </p>
+        <p>
+            <label for="phone">Phone: </label>
+            <input name="phone" id="phone" type="text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####">
+            <small>Format: 123-456-7890</small>
+
+        </p>
+        <p>
+            <label for="email">Email: </label>
+            <input name="email" id="email" type="email" placeholder="example@company.co">
+        </p>
+        <p>
+            <label for=" addr">Address: </label>
+            <input name="addr" id="addr" type="text" placeholder="Street Address (eg. 123 Main St.)" maxlength="64"
+                size="50">
+        </p>
+        <p>
+            <label for="city">City: </label>
+            <input name="city" id="city" type="text" placeholder="City" size="30">
+        </p>
+        <p>
+            <label for="state">State: </label>
+            <input name="state" id="state" type="text" placeholder="State (eg. OH)" minlength="2" maxlength="2"
+                size="20">
+        </p>
+        <p>
+            <label for="zip">ZIP: </label>
+            <input name="zip" id="zip" type="text" placeholder="ZIP code (eg. 43219)" minlength="5" maxlength="5"
+                size="20">
+        </p>
+        <p>
+            <label for="comment">Add a comment </label>
+            <textarea name="comment" id="comment" cols="50" rows="5" placeholder="저희 교회는 어떻게 알게되셨나요?"></textarea>
+        </p>
+        <!-- <button type="button">Do not summit the form</button> -->
+
+        <button type="submit">Submit</button>
+
+        <!-- doable but not RECOMMENDED -->
+        <!-- <input type="submit"> -->
+
+    </form>
+    <!-- <form action="https://www.google.com/search">
+        <div>
+            <label for="gsearch">Google Search</label>
+            <input type="text" name="q" id="gsearch">
+            <button type="submit">Search</button>
+
+        </div>
+    </form>
+    -->
+
+    <!-- Submit 버튼없이 Input에서 Enter Key를 치면 바로 Submit된다. -->
+    <!-- 
+        <form action="https://www.youtube.com/results">
+        <div>
+            <label for="ytsearch">Youtube Search: </label>
+            <input type="text" name="search_query" id="ytsearch">
+
+        </div>
+    </form>  
+    -->
+</body>
+
+</html>
