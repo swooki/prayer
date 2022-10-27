@@ -1,0 +1,64 @@
+h1 {
+    color: whitesmoke;
+    background-color: grey;
+    text-align: center;
+    letter-spacing: 0.2em;
+}
+
+
+h2 {
+    color: teal;
+}
+
+button {
+    color: #254f4a;
+    background-color: rgb(176, 207, 64);
+}
+
+input {
+    color: lightcoral;
+    background-color: olive;
+}
+
+input::placeholder {
+    opacity: .5;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 2;
+}
+
+p::selection {
+    background-color: yellow;
+}
+
+#greeting {
+    font-weight: 700;
+    color: teal;
+}
+
+.prayer:nth-of-type(2n + 1) {
+    background-color: #38b000;
+    color: #004b23;
+}
+
+footer {
+    text-align: center;
+    font-size: small;
+    vertical-align: text-top;
+}
+
+footer:hover {
+    background-color: #38b000;
+    color: #ffff3f;
+}
+
+select {
+    background-color: #38b000;
+    color: #004b23;
+}
