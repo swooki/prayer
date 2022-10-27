@@ -1,5 +1,4 @@
 # prayer
 Website to track prayers
 
-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
-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
+10/27/2022 htmo version - plain html only web site using Bootstrap.
